@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>跨平台網頁設置 0408-1 練習02 japan</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/myall.css">
+
+  <style>
+    body {
+      /* background-image: url(./images/japan1.avif); */
+      /* linear-gradient 漸層色  角度預設角度為0  起始色 終止色 (色碼 後面透明度1為最不透明 0為最透明)   */
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(./images/japan1.avif);
+      background-position: center center;
+      background-size: cover;
+      /* 不重複 */
+      background-repeat: no-repeat;
+      /* 圖片延展 */
+      background-attachment: fixed;
+    }
+
+    .word01 {
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 30px;
+    }
+
+    .word02 {
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 30px;
+      writing-mode: vertical-lr;
+    }
+
+    .bg-a {
+
+
+      transition: all 0.2s;
+    }
+
+    .bg-a:hover {
+      transform: scale(1.1);
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+    
+    }
+
+    @media screen and (max-width:768px) {
+      body {
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(./images/japan6.avif);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-900 text-danger text-bg-light rounded-1" href="#">Japan ．旅遊</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./0408-1_index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./0408-2_about.html">關於我們</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./0408-3_attractions.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              日本之美
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./0408-3_attractions.html">景點</a></li>
+              <li><a class="dropdown-item" href="./0408-4_culture.html">文化</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./0408-5_food.html">美食</a></li>
+
+            </ul>
+          </li>
+
+        </ul>
+        <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+      </div>
+    </div>
+  </nav>
+
+  <div class="conttainer">
+    <div class="row justify-content-start">
+      <div class="col-md-3 d-none d-md-block">
+        <div class="word01 p-5 mt-5 bg-a">
+          <div class="h4 fw-900 text-white">
+            都市寺廟，美食體驗，盡情享受日本生活。
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-3 d-none d-md-block">
+        <div class="word01 p-5 mt-2 bg-a">
+          <div class="h4 fw-900 text-white">
+            花海古蹟，尋覓幸福美好。
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-md-3 d-none d-md-block">
+        <div class="word02 p-5 bg-a">
+          <div class="h4 fw-900 text-white">
+            傳統文化，自然風光，感受日本魅力。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

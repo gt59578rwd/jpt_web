@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跨平台網頁設置 0408-5 美食food</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/myall.css">
+    <style>
+        .banner {
+            height: 230px;
+            background-image: url(./images/japan2.avif);
+        }
+
+        .bg-cover {
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .bg-img {
+
+            transition: all 0.2s;
+        }
+
+        .bg-img:hover {
+            transform: scale(1.02);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-900 text-danger text-bg-light rounded-1" href="#">Japan ．旅遊</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./0408-1_index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./0408-2_about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="./0408-3_attractions.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            日本之美
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./0408-3_attractions.html">景點</a></li>
+                            <li><a class="dropdown-item" href="./0408-4_culture.html">文化</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./0408-5_food.html">美食</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner bg-cover"></div>
+
+
+
+    <div class="container">
+        <div class="h3 mt-3 text-danger fw-900">美食介紹(未做連結)<small class="text-muted">Food</small></div>
+
+        <div class="row">
+            <div class="col-md-4 mt-3 d-flex flex-column border border-3 rounded-3 p-2 shadow bg-img">
+                <img src="./images/japanfood1.avif" class="img-fluid" alt="">
+                <h3 class="text-center text-danger mt-3">飯糰</h3>
+                <p>日本飯糰，又稱「おにぎり」，是一種以米飯為主要成分，包裹著各種餡料或海苔的傳統美食。常見的餡料包括鮭魚、梅子或醃漬梅，是日本人生活中常見的方便且營養豐富的食物。</p>
+
+                <button class="btn btn-info w-100 mt-auto">查看</button>
+            </div>
+            <div class="col-md-4 mt-3 d-flex flex-column border border-3 rounded-3 p-2 shadow bg-img">
+                <img src="./images/japanfood2.avif" class="img-fluid" alt="">
+                <h3 class="text-center text-danger mt-3">麵食</h3>
+                <p>日本麵食多樣，包括拉麵、烏龍麵、蕎麥麵等，每種都有獨特的風味和口感。拉麵以豚骨、豬肉或雞湯為基底，配以麵條和各種配料，是最受歡迎的一種。</p>
+
+                <button class="btn btn-info w-100 mt-auto">查看</button>
+            </div>
+            <div class="col-md-4 mt-3 d-flex flex-column border border-3 rounded-3 p-2 shadow bg-img">
+                <img src="./images/japanfood4.avif" class="img-fluid" alt="">
+                <h3 class="text-center text-danger mt-3">壽司</h3>
+                <p>日本壽司是一種源自日本的傳統美食，以新鮮的生魚片和醋飯為主要材料。包括握壽司、刺身和捲壽司等多種風味。其精緻的製作工藝和多樣的口味吸引了全球食客的喜愛。</p>
+
+                <button class="btn btn-info w-100 mt-auto">查看</button>
+            </div>
+            <div class="col-md-4 mt-3 d-flex flex-column border border-3 rounded-3 p-2 shadow bg-img">
+                <img src="./images/japanfood03.jpg" class="img-fluid" alt="">
+                <h3 class="text-center text-danger mt-3">炸物</h3>
+                <p>日本炸物豐富多樣，包括天婦羅、炸豬排、炸蝦等。以麵粉、蛋液和麵包糠裹住食材後油炸而成，口感酥脆。天婦羅以各種蔬菜或海鮮為主，常伴有蘸醬享用。</p>
+
+                <button class="btn btn-info w-100 mt-auto">查看</button>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="footer mt-3">
+        <div class="h5 text-bg-dark text-center py-3 fw-900">@旅遊2024</div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

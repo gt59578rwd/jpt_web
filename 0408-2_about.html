@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跨平台網頁設置 0408-2 練習02 關於我們</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/myall.css">
+    <style>
+        .banner {
+            height: 230px;
+            background-image: url(./images/japan2.avif);
+        }
+
+        .bg-cover {
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .timeline-section {
+            position: relative;
+        }
+
+        .timeline-section::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background-color: #ebbfbf;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .timeline-section-pointer {
+            position: relative;
+        }
+
+        .timeline-section-pointer::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            width: 15px;
+            height: 15px;
+            background-color: #fcfcfc;
+            border: 3px solid #5e0606;
+            border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .timeline-section-pointer:hover:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            width: 25px;
+            height: 25px;
+
+            border: 5px solid #0a0000;
+            border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @media screen and (max-width:768px) {
+
+            .timeline-section::before {
+                left: -15px;
+                background-color: #808080;
+            }
+
+            .timeline-section-pointer::before {
+                left: -3px;
+                border: 3px solid #3a3a3a;
+
+            }
+
+            .timeline-section-pointer:hover:before {
+                position: absolute;
+                content: "";
+
+                width: 25px;
+                height: 25px;
+
+                border: 5px solid #2c2b2b;
+                border-radius: 50%;
+                left: -3px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-900 text-danger text-bg-light rounded-1" href="#">Japan ．旅遊</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./0408-1_index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./0408-2_about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./0408-3_attractions.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            日本之美
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./0408-3_attractions.html">景點</a></li>
+                            <li><a class="dropdown-item" href="./0408-4_culture.html">文化</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./0408-5_food.html">美食</a></li>
+          
+                          </ul>
+                        </li>
+
+                </ul>
+                <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner bg-cover"></div>
+
+
+
+    <div class="container">
+        <div class="timeline-section">
+
+            <div class="row mt-3 align-items-center timeline-section-pointer">
+                <div class="col-md-6 text-center">
+                    <div class="mytext">
+                        <div class="h3 fw-900 text-danger"> 關於我們<small class="text-muted">about us</small></div>
+                        <p>探索旅遊的魅力，融合文化與地理之美。從古老遺址到現代都市，體驗多樣文化風情，探索日本的奇妙之旅。</p>
+                        <ul class="list-unstyled">
+                            <li>賞櫻絕美春光。</li>
+                            <li>夏日祭典熱鬧非凡。</li>
+                            <li>楓紅如火漫山川。</li>
+                            <li>冬日雪景賞心悅目。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myimg bg-cover" style="background-image: url(./images/japan6.avif); height: 360px;">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-3 align-items-center flex-row-reverse timeline-section-pointer">
+                <div class="col-md-6 text-center">
+                    <div class="mytext">
+                        <div class="h3 fw-900 text-danger"> 店家資訊<small class="text-muted">store info.</small></div>
+                        <ul class="list-unstyled">
+                            <li>店家資訊:旅行樂園</li>
+                            <li>營業時間:週一至週五 9:00 - 18:00，週末休息。</li>
+                            <li>地址:東京都新宿區1-2-3，樂園大廈5樓。</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myimg bg-cover" style="background-image: url(./images/japan4.avif); height: 360px;">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row mt-3 align-items-center  timeline-section-pointer ">
+                <div class="col-md-6 text-center">
+                    <div class="mytext">
+                        <div class="h3 fw-900 text-danger"> 服務範圍<small class="text-muted">service</small></div>
+                        <ul class="list-unstyled">
+                            <li>精選獨特景點，專業導遊解說。</li>
+                            <li>豐富文化體驗，深入了解日本風情。</li>
+                            <li>美食之旅，品味地道日式料理。</li>
+                            <li>客製化行程，滿足您的個性需求。</li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myimg bg-cover" style="background-image: url(./images/japan1.avif); height: 360px;">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row mt-3 align-items-center flex-row-reverse timeline-section-pointer">
+                <div class="col-md-6 text-center">
+                    <div class="mytext">
+                        <div class="h3 fw-900 text-danger"> 最新消息<small class="text-muted">News</small></div>
+                        <ul class="list-unstyled">
+                            <li>特價優惠，限時折扣，現在就預訂！</li>
+                            <li>旅遊套餐，超值體驗，享受獨家福利。</li>
+                            <li>免費升級，尊享特殊待遇，抓住機會。</li>
+                            <li>早鳥優惠，提前預訂，節省更多花費。</li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myimg bg-cover" style="background-image: url(./images/japan5.avif); height: 360px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer mt-3">
+        <div class="h5 text-bg-dark text-center py-3 fw-900">@旅遊2024</div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

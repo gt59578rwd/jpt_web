@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Rampart+One&family=ZCOOL+XiaoWei&display=swap');
+body {
+    /* -------------字體-------------*/
+    font-family: "Noto Sans TC", sans-serif;
+    /* font-family: "ZCOOL XiaoWei", sans-serif; */
+    /* font-family: "Rampart One", sans-serif; */
+    /* -------------字體-------------*/
+}
+.fw-900{
+    font-weight: 900;
+}
+.fw-800{
+    font-weight: 800;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-300{
+    font-weight: 300;
+}
+.fw-200{
+    font-weight: 200;
+}
+.fw-100{
+    font-weight: 100;
+}
+
+.bg-cover{
+    background-position: center center;
+    background-size: cover;
+
+}
+
+:root{
+    --bgc01:#D5D2C1;
+    --bgc02:#BD8E62;
+    --bgc03:#A46843;
+    --bgc04:#370D00;
+    --textc01:#FFC2C3;
+    --textc02:#FE7773;
+    --textc03:#E81E25;
+    --textc04:#0E0301;
+
+
+    --abgc01:#D1DDDB;
+    --abgc02:#85B8CB;
+    --abgc03:#1D6A96;
+    --abgc04:#283B42;
+    --atextc01:#FFD954;
+    --atextc02:#E4B660;
+    --atextc03:#F2AB39;
+    --atextc04:#69491A;
+
+    --ahbgc01:#9BCFB8;
+    --ahbgc02:#7FB174;
+    --ahbgc03:#689C97;
+    --ahbgc04:#072A24;
+    --ahtextc01:#ECE4E2;
+    --ahtextc02:#FCD3D1;
+    --ahtextc03:#FCDFF3;
+    --ahtextc04:#FE929F;
+}
+
+@media screen and (max-width:756px) {
+    .table-rwd thead{
+        display: none;
+    }
+    .table-rwd tbody tr{
+        display: block;
+        margin-top: 5px;
+        border: 2px solid var(--textc01);
+    }
+    .table-rwd tbody tr td{
+        display: block;
+        overflow: hidden;
+    }
+    .table-rwd tbody tr td::before{
+        content: attr(data-th)" : ";
+        color:var(--textc03);
+        display: block;
+        float: left;
+       font-weight: 900;
+        width: 4em;
+        text-align: right;
+        padding-right: 1em;
+    }
+    .table-rwd tbody tr td span .table-col{
+        display: block;
+        float: left;
+        width: calc(100% - 4em);
+    }
+    .table-rwd tbody tr td img{
+        width: 50%;
+        height: 50%;
+    }
+
+}

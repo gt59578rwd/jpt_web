@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跨平台網頁設置 0408-3 景點介紹Attractions</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/myall.css">
+    <style>
+        .banner {
+            height: 230px;
+            background-image: url(./images/japan2.avif);
+        }
+
+        .bg-cover {
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .bg-img {
+
+            transition: all 0.2s;
+        }
+
+        .bg-img:hover {
+            transform: scale(1.02);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-900 text-danger text-bg-light rounded-1" href="#">Japan ．旅遊</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./0408-1_index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./0408-2_about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="./0408-3_attractions.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            日本之美
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./0408-3_attractions.html">景點</a></li>
+                            <li><a class="dropdown-item" href="./0408-4_culture.html">文化</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./0408-5_food.html">美食</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner bg-cover"></div>
+
+
+
+    <div class="container">
+        <div class="h3 mt-3 text-danger fw-900">景點介紹<small class="text-muted">Attractions</small></div>
+
+        <div class="row">
+            <div class="col-md-4 mt-3 d-flex flex-column border border-3 rounded-3 p-2 shadow bg-img">
+                <img src="./images/japanharu.avif" class="img-fluid" alt="">
+                <h3 class="text-center text-danger mt-3">晴空塔</h3>
+                <p>
+                    晴空塔，是東京最具代表性的地標之一，以其獨特的設計和壯觀的景色而聞名。位於日本東京都，矗立於東京都心的浅草地區，是一個結合了觀光、購物和餐飲的多功能建築。</p>
+                <p>晴空塔的特色在於其高度和360度全景觀景台，遊客可在此欣賞東京城市的壯麗景色，包括遠處的富士山和東京塔。此外，塔內還有餐廳、紀念品店和展覽空間，為遊客提供了全方位的旅遊體驗。</p>
+                <a class="btn btn-info w-100 mt-auto" href="./0408-3_detail1.html" target="_blank">查看</a>
+            </div>
+            <div class="col-md-4 mt-3 d-flex flex-column border border-3 rounded-3 p-2 shadow bg-img">
+                <img src="./images/japan8.avif" class="img-fluid" alt="">
+                <h3 class="text-center text-danger mt-3">道頓崛觀光船</h3>
+                <p>道頓崛，位於日本大阪市中心，是一個著名的商業街區和遊樂場所。以其繁華的購物街、美食街和夜生活聞名於世。</p>
+                <p>這個地區的特色在於其燈火通明的夜景，以及琳瑯滿目的商店和餐廳。遊客可以在這裡品嚐到各種日本美食，同時也能感受到大阪獨特的活力和文化氛圍。</p>
+                <a class="btn btn-info w-100 mt-auto" href="./0408-3_detail2.html" target="_blank">查看</a>
+            </div>
+            <div class="col-md-4 mt-3 d-flex flex-column border border-3 rounded-3 p-2 shadow bg-img">
+                <img src="./images/japan6.avif" class="img-fluid" alt="">
+                <h3 class="text-center text-danger mt-3">廣島城</h3>
+                <p>廣島城座落於日本廣島市中心，是一座具有悠久歷史的城堡。其特色在於保留了豐富的文化遺產，包括櫻花盛開的城堡公園和壯觀的城堡建築。</p>
+                <p>這座城堡曾是日本戰國時代的重要據點，後來在二戰時成為原子彈爆炸的轟炸目標。現在的廣島城已經被完整地修復，成為了一個重要的觀光景點，吸引著許多遊客前來參觀。</p>
+                <a class="btn btn-info w-100 mt-auto" href="./0408-3_detail3.html" target="_blank">查看</a>
+            </div>
+            <div class="col-md-4 mt-3 d-flex flex-column border border-3 rounded-3 p-2 shadow bg-img">
+                <img src="./images/japan5.avif" class="img-fluid" alt="">
+                <h3 class="text-center text-danger mt-3">富士山</h3>
+                <p>
+                    富士山是日本最具代表性的自然地標，位於東京和靜岡縣交界處。其特色在於其獨特的尖峰形狀和壯觀的自然風光，每年吸引著大量登山者和觀光客。</p>
+                <p>這座火山不僅是日本的國家象徵，也被列為世界文化遺產。遊客可以在富士山周圍享受各種戶外活動，如登山、露營和賞景等，同時也可以感受到富士山所散發出的神秘魅力。</p>
+                <a class="btn btn-info w-100 mt-auto" href="./0408-3_detail4.html" target="_blank">查看</a>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="footer mt-3">
+        <div class="h5 text-bg-dark text-center py-3 fw-900">@旅遊2024</div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

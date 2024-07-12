@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跨平台網頁設置 0408-3 景點介紹Attractions</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/myall.css">
+    <style>
+        .banner {
+            height: 230px;
+            background-image: url(./images/japan2.avif);
+        }
+
+        .bg-cover {
+            background-position: center center;
+            background-size: cover;
+        }
+        .bg-img {
+            
+
+            transition: all 0.2s;
+        }
+
+        .bg-img:hover {
+            transform: scale(1.1);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-900 text-danger text-bg-light rounded-1" href="#">Japan ．旅遊</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./0408-1_index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./0408-2_about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="./0408-3_attractions.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            日本之美
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./0408-3_attractions.html">景點</a></li>
+                            <li><a class="dropdown-item" href="./0408-4_culture.html">文化</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./0408-5_food.html">美食</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner bg-cover"></div>
+
+
+
+    <div class="container">
+        <div class="h3 mt-3 text-danger fw-900">文化介紹<small class="text-muted">Detail</small></div>
+
+        <div class="row">
+
+
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="detail_img_1 bg-cover"
+                            style="background-image:url(./images/japanbunnka3.avif); height: 400px;"></div>
+                    </div>
+
+                    <div class="bg-light py-3">
+                        <ul class="list-unstyled d-flex justify-content-between overflow-scroll flex-nowrap">
+
+                            <li>
+                                <div style="width: 120px; height: 120px; background-image: url(images/shrine01.avif);"
+                                    class="bg-cover border border-5 bg-img"></div>
+                            </li>
+                            <li>
+                                <div style="width: 120px; height: 120px; background-image: url(images/shrine02.avif);"
+                                    class="bg-cover border border-5 bg-img"></div>
+                            </li>
+                            <li>
+                                <div style="width: 120px; height: 120px; background-image: url(images/shrine03.avif);"
+                                    class="bg-cover border border-5 bg-img"></div>
+                            </li>
+                            <li>
+                                <div style="width: 120px; height: 120px; background-image: url(images/shrine04.avif);"
+                                    class="bg-cover border border-5 bg-img"></div>
+                            </li>
+                            <li>
+                                <div style="width: 120px; height: 120px; background-image: url(images/shrine05.avif);"
+                                    class="bg-cover border border-5 bg-img"></div>
+                            </li>
+                            <li>
+                                <div style="width: 120px; height: 120px; background-image: url(images/shrine06.avif);"
+                                    class="bg-cover border border-5 bg-img"></div>
+                            </li>
+                            <li>
+                                <div style="width: 120px; height: 120px; background-image: url(images/shrine07.avif);"
+                                    class="bg-cover border border-5 bg-img"></div>
+                            </li>
+                            <li>
+                                <div style="width: 120px; height: 120px; background-image: url(images/shrine08.avif);"
+                                    class="bg-cover border border-5 bg-img"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="h3">廟宇參拜</div>
+                <p>在日本，參拜廟宇是一種傳統的宗教活動。人們前往神社或寺廟祈福、祭拜神靈，表達敬意與感恩。這不僅是一種宗教信仰，也是文化傳承的一部分，吸引著許多人參與。</p>
+                <p>價格:500日幣/人</p>
+                <p>推薦指數 <span class="badge text-bg-danger">☆</span>
+                    <span class="badge text-bg-danger">☆</span>
+                    <span class="badge text-bg-danger">☆</span>
+                    <span class="badge text-bg-danger">☆</span>
+                    <span class="badge text-bg-danger">☆</span>
+
+                </p>
+                <div class="mb-3">
+                    <label for="" class="form-label">數量</label>
+                    <input type="number" class="form-control">
+                </div>
+                <button class="btn btn-success w-100">訂購</button>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer mt-3">
+            <div class="h5 text-bg-dark text-center py-3 fw-900">@旅遊2024</div>
+        </div>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
